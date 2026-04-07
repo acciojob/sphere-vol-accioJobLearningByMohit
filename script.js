@@ -1,13 +1,12 @@
 function volume_sphere() {
-    
-  let radius = document.getElementById("radius").value;
-	 // Convert to number
+
+    // Get radius value
+    var radius = document.getElementById("radius").value;
+
+    // Convert to number
     radius = Number(radius);
 
-	let valume=document.getElementById("valume");
-	 // Calculate volume
-    var volume = (4/3) * Math.PI * Math.pow(radius, 3);
-	 // Calculate volume
+    // Calculate volume
     var volume = (4/3) * Math.PI * Math.pow(radius, 3);
 
     // Set result
@@ -15,6 +14,6 @@ function volume_sphere() {
 
     // Prevent form submission
     return false;
-} 
+}
 
 window.onload = document.getElementById('MyForm').onsubmit = volume_sphere;
